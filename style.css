@@ -20,6 +20,11 @@ html, body{
     justify-content: center;
 }
 
+.line{
+    border-bottom: 1px solid #ccc;
+    padding-top: 20px;
+}
+
 .img{
     background: url('assets/images/image-omelette.jpeg') no-repeat center center;
     background-size: cover;
