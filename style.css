@@ -42,6 +42,7 @@ h1, h2{
 
 h1{
     font-size: 2.5em;
+    color: #2A2824;
 }
 
 h2{
@@ -52,12 +53,14 @@ h2{
 
 .container > p, .nutrition p{
     padding: 20px 0;
+    color: #474747;
 }
 
 .time{
     background-color: #FFF7FC;
     border-radius: 10px;
     padding: 20px;
+    color: #474747;
 }
 
 .time h3{
@@ -68,17 +71,51 @@ h2{
     padding: 30px;
 }
 
+.time ul li::marker{
+    color: #6B2945;
+}
+
 li{
     padding: 10px;
 }
 
-.ingredients ul, .instructions ol{
+.ingredients ul{
     padding-left: 30px ;
+    color: #474747;
 }
+
+.ingredients li::marker{
+    color: #784426;
+}
+
+.instructions ol{
+    counter-reset: list-counter; /* Define um contador */
+    list-style: none; /* Remove os números padrão */
+    padding-left: 30px;
+    color: #474747;
+}
+
+.instructions ol li{
+    counter-increment: list-counter; /* Incrementa o contador */
+    position: relative;
+    padding-left: 30px; /* Espaço para o número */
+    margin-bottom: 10px;
+
+}
+
+.instructions ol li::before {
+    content: counter(list-counter) "."; /* Exibe o número gerado */
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    color: #784426; /* Altere para a cor desejada */
+}
+
 
 table{
     border-collapse: collapse;
     width: 100%;
+    color: #474747;
 }
 
 tr{
@@ -87,4 +124,9 @@ tr{
 
 td{
     padding: 20px ;
+}
+
+td:nth-child(even){
+    color: #784426;
+    font-weight: bold;
 }
