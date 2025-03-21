@@ -12,10 +12,12 @@
 }
 
 html, body{
-    height: 100vh;
     background-color: white;
     background-color: #F3E5D8;
     font-family: 'outfit';
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .img{
@@ -26,8 +28,7 @@ html, body{
 
 main{
     width: 97vw;
-    max-width: 710px;
-    margin: auto;
+    max-width: 750px;
     background-color: white;
 }
 
@@ -91,7 +92,7 @@ li{
 .instructions ol{
     counter-reset: list-counter; /* Define um contador */
     list-style: none; /* Remove os números padrão */
-    padding-left: 30px;
+    padding-left: 15px;
     color: #474747;
 }
 
@@ -123,7 +124,7 @@ tr{
 }
 
 td{
-    padding: 20px ;
+    padding: 10px;
 }
 
 td:nth-child(even){
